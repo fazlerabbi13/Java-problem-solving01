@@ -5,7 +5,10 @@ public class SumAverage {
          for (int num : array) {
             sum += num;
         }
+
+        double average = (double) sum / array.length;
         System.out.println(array.length);
         System.out.println(sum);
+        System.out.println(average);
     }
 }
