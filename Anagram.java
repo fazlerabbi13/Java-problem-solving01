@@ -3,21 +3,24 @@ import java.util.Arrays;
 public class Anagram {
     public static void main(String[] args) {
         String str1 = "listen";
-        String str2 = "silent";
+        String str2 = "silen";
+        
+        if (str1.length()!=str2.length()){
+            System.out.println("not anagram");
+        }
 
-        boolean isAnagram = areAnagrams(str1, str2);
-        System.out.println("Are anagrams? " + isAnagram);
-    }
+        char[] arr1=str1.toCharArray();
+        char[] arr2=str2.toCharArray();
 
-    public static boolean areAnagrams(String s1, String s2) {
-        if (s1.length() != s2.length()) return false;
 
-        char[] arr1 = s1.toCharArray();
-        char[] arr2 = s2.toCharArray();
 
         Arrays.sort(arr1);
         Arrays.sort(arr2);
-
-        return Arrays.equals(arr1, arr2);
+        
+        if(Arrays.equals(arr1, arr2)){
+            System.out.println("anagrams");
+        }
     }
 }
+
+   
