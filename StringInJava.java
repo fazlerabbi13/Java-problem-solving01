@@ -6,6 +6,7 @@ public class StringInJava {
         StringBuffer s1= new StringBuffer(string1);
 
         s1.insert(6, "Fazle Rabbi");
+        s1.append("are you ok!");
         System.out.println(s1);
     }
 }
