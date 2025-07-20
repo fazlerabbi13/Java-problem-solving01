@@ -1,8 +1,11 @@
 public class StringInJava {
     public static void main(String args[]){
-        String s = "Hello, World";
-        String stringUpdate=s.concat(" I am here");
+        String string1 = "Hello, World";
+        String stringUpdate=string1.concat(" I am here");
 
-        System.out.println(stringUpdate);
+        StringBuffer s1= new StringBuffer(string1);
+
+        s1.insert(6, "Fazle Rabbi");
+        System.out.println(s1);
     }
 }
