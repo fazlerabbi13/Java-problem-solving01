@@ -7,6 +7,7 @@ public class StringInJava {
 
         s1.insert(6, "Fazle Rabbi");
         s1.append("are you ok!");
+        s1.reverse();
         System.out.println(s1);
     }
 }
